@@ -1,0 +1,20 @@
+{
+  "name": "Daily Mail Sidebar Blocker",
+  "version": "1.0",
+  "description": "Block the Sidebar section on Daily Mail",
+  "manifest_version": 2,
+  "permissions": [
+      "storage",
+      "https://www.dailymail.co.uk/*"
+  ],
+  "content_scripts": [
+      {
+        "matches": [
+            "https://www.dailymail.co.uk/*"
+        ],
+        "js": [
+            "target.js"
+        ]
+      }
+  ]
+}
