@@ -14,4 +14,17 @@ function showSidebar(){
     sidebar.style.display = '';
 }
 
-hideSidebar();
+chrome.storage.sync.get('sidebarDisabled', function({sidebarDisabled}){
+    if (sidebarDisabled) {
+        hideSidebar();
+    }
+});
+
+chrome.storage.onChanged.addListener(function(changes, areaname){
+    const isSelected = changes.sidebarDisabled.newValue;
+    if (isSelected) {
+        hideSidebar();
+    } else {
+        showSidebar();
+    }
+});
