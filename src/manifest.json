@@ -1,7 +1,7 @@
 {
   "name": "Daily Mail Sidebar Blocker",
   "version": "1.0",
-  "description": "Block the Sidebar section on Daily Mail",
+  "description": "Hide the Sidebar on the Daily Mail!",
   "manifest_version": 2,
   "permissions": [
       "storage",
