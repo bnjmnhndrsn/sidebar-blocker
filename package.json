@@ -1,0 +1,11 @@
+{
+  "name": "Sidebar-Blocker",
+  "version": "0.0.0",
+  "description": "A Chrome Extension",
+  "scripts": {
+    "publish": "zip -r dist.zip src"
+  },
+  "author": "",
+  "dependencies": {},
+  "devDependencies": {}
+}
